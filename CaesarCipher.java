@@ -1,5 +1,6 @@
 import edu.duke.*;
 import java.io.*;
+import java.util.*;
 
 public class CaesarCipher {
     public boolean isCharacter(char ch) {
@@ -84,6 +85,20 @@ public class CaesarCipher {
         return newInput.toString();
     }
     
+    public ArrayList bruteForceDecrypt(String input) {
+        int n = 26;
+        ArrayList<Integer> crackKey = new ArrayList<Integer>(n);
+        ArrayList<String> results = new ArrayList<String>(n);
+        for(int i = 1; i <= n; i++) {
+            crackKey.add(i);
+        }
+        
+        for(int i = 0; i < crackKey.size(); i++) {
+            results.add(encrypt(input, crackKey.get(i))); 
+        }
+        return results;
+    }
+    
     public void testEncrypt() {
                
         System.out.println(encrypt("FIRST LEGION ATTACK EAST FLANK!", 23));
@@ -95,6 +110,15 @@ public class CaesarCipher {
     
     public void testEncryptTwoKeys() {
         System.out.println(encryptTwoKeys("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 8, 21));
+    }
+    
+    public void testBruteForceDecrypt() {
+        ArrayList<String> results = new ArrayList<String>(bruteForceDecrypt("Lujyfwapvu huk zljbypaf hyl mbukhtluahs whyaz vm avkhf'z Pualyula."));
+        int size = results.size();
+        for(int i = 0; i < size; i++) {
+            int pos = i + 1;
+            System.out.println(pos + ": " + results.get(i));
+        }
     }
 }
 

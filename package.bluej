@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
@@ -15,6 +16,24 @@ package.frame.height=571
 package.frame.width=800
 package.numDependencies=0
 package.numTargets=1
+=======
+editor.fx.0.height=747
+editor.fx.0.width=818
+editor.fx.0.x=2823
+editor.fx.0.y=154
+objectbench.height=134
+objectbench.width=760
+package.divider.horizontal=0.6
+package.divider.vertical=0.672093023255814
+package.editor.height=282
+package.editor.width=670
+package.editor.x=1941
+package.editor.y=71
+package.frame.height=530
+package.frame.width=800
+package.numDependencies=0
+package.numTargets=2
+>>>>>>> ecb782684c664cef31097df2bfe385c37791af2f
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
@@ -24,11 +43,28 @@ readme.width=47
 readme.x=10
 readme.y=10
 target1.height=50
+<<<<<<< HEAD
 target1.name=CaesarCipher
 target1.naviview.expanded=true
+=======
+target1.name=WordLengths
+>>>>>>> ecb782684c664cef31097df2bfe385c37791af2f
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
 target1.width=110
 target1.x=70
+<<<<<<< HEAD
 target1.y=10
+=======
+target1.y=70
+target2.height=50
+target2.name=CaesarCipher
+target2.naviview.expanded=true
+target2.showInterface=false
+target2.type=ClassTarget
+target2.typeParameters=
+target2.width=110
+target2.x=70
+target2.y=10
+>>>>>>> ecb782684c664cef31097df2bfe385c37791af2f
